@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma, Arial, sans-serif;
+}
+
+body{
+    background:#f4f9f4;
+    color:#333;
+    padding-top:80px;
+}
+
+/* NAVBAR */
+header{
+    background:#1f6b2a;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+}
+
+.navbar{
+    max-width:1400px;
+    margin:auto;
+    padding:12px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+}
+
+/* LOGO */
+.logo{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+/* NAV BUTTONS */
+.nav-links{
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
+
+.nav-btn{
+    background:#2f7d32;
+    color:white;
+    text-decoration:none;
+    padding:8px 18px;
+    border-radius:999px;
+    font-weight:bold;
+    white-space:nowrap;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background-color .25s ease;
+}
+
+.nav-btn:hover{
+    background:#3fa047;
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+/* SPECIAL BUTTONS */
+.publish-btn{
+    background:#ff9800;
+}
+
+.publish-btn:hover{
+    background:#fb8c00;
+    transform:translateY(-4px) scale(1.08);
+    box-shadow:0 12px 24px rgba(255,152,0,.5);
+}
+
+.login-btn{
+    background:#388e3c;
+}
+
+/* HERO */
+.hero{
+    min-height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:40px 20px;
+}
+
+.hero-content h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.cta-btn{
+    background:#66bb6a;
+    padding:12px 30px;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.cta-btn:hover{
+    transform:translateY(-3px) scale(1.06);
+    box-shadow:0 12px 22px rgba(102,187,106,.5);
+}
+
+/* CATEGORY BUTTONS */
+.category-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+}
+
+.category-card{
+    background:#e8f5e9;
+    padding:12px 24px;
+    border-radius:999px;
+    font-weight:bold;
+    color:#1b5e20;
+    text-decoration:none;
+    transition:.25s;
+}
+
+.category-card:hover{
+    background:#66bb6a;
+    color:white;
+    transform:translateY(-6px) scale(1.08);
+    box-shadow:0 14px 28px rgba(0,0,0,.25);
+}
+
+/* FOOTER */
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+    .nav-links{
+        overflow-x:auto;
+    }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
+}
+
+.login-container .forgot {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-container .forgot a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.login-container .forgot a:hover {
+  text-decoration: underline;
+}
